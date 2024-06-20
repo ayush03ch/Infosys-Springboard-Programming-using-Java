@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class Selection_Control_Assignment_4 {
+public class Tester {
     public static void main(String[] args) {
         int vegPlate = 12;
         int nonVegPlate = 15;
