@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class Selection_Control_Assignment_2 {
+public class Tester {
     public static void main(String[] args) {
         // Implement your code here
         int a, b, c;
