@@ -81,15 +81,13 @@ class InvalidExperienceException extends Exception {
     }
 }
 
-
-
 abstract class Employee {
     private static int contractIdCounter;
-    private static int permanentIdCounter;
+    private static int permenantIdCounter;
 
     static {
         contractIdCounter = 10001;
-        permanentIdCounter = 10001;
+        permenantIdCounter = 10001;
     }
 
     private String employeeId;
@@ -117,7 +115,7 @@ abstract class Employee {
             this.employeeName = employeeName;
         }
     }
-
+ 
     public double getSalary() {
         return salary;
     }
@@ -137,13 +135,13 @@ abstract class Employee {
     public static void setContractIdCounter(int contractIdCounter) {
         Employee.contractIdCounter = contractIdCounter;
     }
-
-    public static int getPermanentIdCounter() {
-        return permanentIdCounter;
+    
+    public static int getPermenantIdCounter() {
+        return permenantIdCounter;
     }
 
-    public static void setPermanentIdCounter(int permanentIdCounter) {
-        Employee.permanentIdCounter = permanentIdCounter;
+    public static void setPermenantIdCounter(int permenantIdCounter) {
+        Employee.permenantIdCounter = permenantIdCounter;
     }
 
     public abstract void calculateSalary(float salaryFactor);
@@ -153,8 +151,6 @@ abstract class Employee {
         return "Employee Id: " + getEmployeeId() + ", Employee Name: " + getEmployeeName();
     }
 }
-
-
 
 class ContractEmployee extends Employee {
     private double wagePerHour;
